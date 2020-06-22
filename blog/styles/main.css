@@ -3,6 +3,10 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+    list-style: none; 
+}
+
 .question {
     background-color: blue;
     padding: 10px;
