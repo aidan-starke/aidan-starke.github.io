@@ -1,5 +1,6 @@
-div, h3 {
+html {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .question {
@@ -7,3 +8,4 @@ div, h3 {
     padding: 10px;
     color: white;
 }
+
