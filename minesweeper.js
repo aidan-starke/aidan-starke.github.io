@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', startGame)
 //   ]
 // } 
 
-var board = createBoard();
 //create game board with a default size 4x4
 function createBoard(row = 4) {
   if (row > 6)
@@ -52,6 +51,7 @@ function createBoard(row = 4) {
 }
 
 function startGame() {
+  var board = createBoard();
   var cells = board.cells;
   for (let i = 0; i < cells.length; i++) {
     cells[i].surroundingMines = countSurroundingMines(cells[i]);
