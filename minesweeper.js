@@ -53,6 +53,7 @@ function createBoard(row = 4) {
 var board = createBoard();
 
 function startGame() {
+  var board = createBoard();
   var cells = board.cells;
   for (let i = 0; i < cells.length; i++) {
     cells[i].surroundingMines = countSurroundingMines(cells[i]);
