@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', startGame)
 //   ]
 // } 
 
-var board = createBoard();
 //create game board with a default size 4x4
 function createBoard(row = 4) {
   if (row > 6)
@@ -50,6 +49,8 @@ function createBoard(row = 4) {
   }
   return board;
 }
+
+var board = createBoard();
 
 function startGame() {
   var cells = board.cells;
