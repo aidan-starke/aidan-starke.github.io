@@ -1,55 +1,55 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
-var board = {
-  cells: [
-    {
-      row: 0,
-      col: 0,
-      isMine: true,
-      hidden: true
-    },
-    {
-      row: 0,
-      col: 1,
-      isMine: false,
-      hidden: true
-    },
-    {
-      row: 1,
-      col: 0,
-      isMine: false,
-      hidden: true
-    },
-    {
-      row: 1,
-      col: 1,
-      isMine: false,
-      hidden: true
-    }
-  ]
-} 
-
-// var board = createBoard();
-// //create game board with a default size 4x4
-// function createBoard(row = 4) {
-//   if (row > 6)
-//     row = 6
-//   col = row;
-//   var board = {
-//     cells: []
-//   }
-//   for (let i = 0; i < row; i++) {
-//     for (let j = 0; j < col; j++) {
-//       board.cells.push({
-//         row: i,
-//         col: j,
-//         isMine: Math.random() >= 0.85,
-//         hidden: true
-//       });
+// var board = {
+//   cells: [
+//     {
+//       row: 0,
+//       col: 0,
+//       isMine: true,
+//       hidden: true
+//     },
+//     {
+//       row: 0,
+//       col: 1,
+//       isMine: false,
+//       hidden: true
+//     },
+//     {
+//       row: 1,
+//       col: 0,
+//       isMine: false,
+//       hidden: true
+//     },
+//     {
+//       row: 1,
+//       col: 1,
+//       isMine: false,
+//       hidden: true
 //     }
-//   }
-//   return board;
-// }
+//   ]
+// } 
+
+var board = createBoard();
+//create game board with a default size 4x4
+function createBoard(row = 4) {
+  if (row > 6)
+    row = 6
+  col = row;
+  var board = {
+    cells: []
+  }
+  for (let i = 0; i < row; i++) {
+    for (let j = 0; j < col; j++) {
+      board.cells.push({
+        row: i,
+        col: j,
+        isMine: Math.random() >= 0.85,
+        hidden: true
+      });
+    }
+  }
+  return board;
+}
 
 function startGame() {
   var cells = board.cells;
