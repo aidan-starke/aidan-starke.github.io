@@ -1029,8 +1029,8 @@ div.pp_default .pp_loaderIcon
 
 .logo-holder.footer-logo img
 {
-    border: 10px solid #fff;
-    border-radius: 90%;
+    /* border: 10px solid #fff;
+    border-radius: 90%; */
     height: auto;
 }
 
@@ -1038,8 +1038,8 @@ div.pp_default .pp_loaderIcon
 {
     max-width: none !important;
     max-height: none !important;
-    border: 10px solid #fff;
-    border-radius: 90%;
+    /* border: 5px solid #fff;
+    border-radius: 15%; */
     height: auto;
 
 }
