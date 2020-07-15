@@ -84,8 +84,6 @@ function countSurroundingMines(cell) {
   return surroundingMines.filter(x => x.isMine).length;
 }
 
-
-
 function resetBoard() {
   board = {};
   document.querySelector(".board").innerHTML = "";
