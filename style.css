@@ -1480,7 +1480,7 @@ li.left-footer-content
 li.right-footer-contnet
 {
     text-align: right;
-    /* padding-left: 13px; */
+    padding-left: 13px;
 }
 
 li.right-footer-contnet a
