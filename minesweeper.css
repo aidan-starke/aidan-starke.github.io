@@ -59,8 +59,12 @@ div.marked, div.marked:hover {
   background: no-repeat center/60% url("images/mark.svg") deepskyblue;
 }
 
-.reset-button {
+.reset-button-holder {
   text-align: center;
+}
+
+.reset-button {
   background-color: transparent;
   font-family: 'Montserrat', sans-serif, Arial;
 }
+

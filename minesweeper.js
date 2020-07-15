@@ -1,4 +1,9 @@
-document.addEventListener('DOMContentLoaded', startGame)
+document.addEventListener('DOMContentLoaded', startGame);
+document.addEventListener("click", checkForWin);
+document.addEventListener("contextmenu", checkForWin);
+
+const resetButton = document.querySelector(".reset-button");
+resetButton.addEventListener("click", resetBoard);
 
 // var board = {
 //   cells: [
@@ -50,16 +55,16 @@ function createBoard(row = 4) {
   return board;
 }
 
-var board = createBoard();
+var board = {};
 
 function startGame() {
+  board = createBoard();
   var cells = board.cells;
   for (let i = 0; i < cells.length; i++) {
     cells[i].surroundingMines = countSurroundingMines(cells[i]);
   }
 
-  document.addEventListener("click", checkForWin);
-  document.addEventListener("contextmenu", checkForWin);
+
 
   lib.initBoard();
 }
@@ -74,7 +79,16 @@ function checkForWin() {
   lib.displayMessage('You win!')
 }
 
-function countSurroundingMines (cell) {
+function countSurroundingMines(cell) {
   const surroundingMines = lib.getSurroundingCells(cell.row, cell.col);
   return surroundingMines.filter(x => x.isMine).length;
 }
+
+
+
+function resetBoard() {
+  board = {};
+  document.querySelector(".board").innerHTML = "";
+  startGame();
+}
+
