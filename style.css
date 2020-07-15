@@ -1985,3 +1985,7 @@ li.right-footer-contnet a:first-child
     float: right;
     padding: 0 4.5em 2em 0;
 }
+
+h6 {
+    text-align: center;
+}
