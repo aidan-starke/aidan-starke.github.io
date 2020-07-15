@@ -47,7 +47,7 @@ function createBoard(row = 4) {
       board.cells.push({
         row: i,
         col: j,
-        isMine: Math.random() >= 0.85,
+        isMine: Math.random() >= 0.8,
         hidden: true
       });
     }
