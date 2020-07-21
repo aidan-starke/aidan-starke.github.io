@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', startGame);
 
-
 //reset board on click of reset button
 document.getElementById("reset").addEventListener("click", resetBoard);
 document.getElementById("smaller").addEventListener("click", smallerBoard);
@@ -40,7 +39,7 @@ document.addEventListener("contextmenu", checkForWin);
 // } 
 
 //create game board with a default size 4x4
-function createBoard(row=4) {
+function createBoard(row = 4) {
   //max size of 6x6
   if (row > 6)
     row = 6
@@ -65,8 +64,6 @@ function createBoard(row=4) {
 }
 
 function startGame() {
-  
-
   //add surrounding mines count to cells
   var cells = board.cells;
   for (let i = 0; i < cells.length; i++) {
@@ -76,10 +73,10 @@ function startGame() {
   lib.initBoard();
 }
 
-board = createBoard();
+var board = createBoard();
 
 function checkForWin() {
-  var cells = board.cells;
+  let cells = board.cells;
 
   //check if all mines and non-mines are marked correctly
   for (let i = 0; i < cells.length; i++) {
@@ -96,8 +93,8 @@ function countSurroundingMines(cell) {
   return surroundingCells.filter(x => x.isMine).length;
 }
 
-function resetBoard() {
-  //get current board size
+//get current board size
+function getBoardSize() {
   var cells = board.cells.length;
   var currentSize;
   for (let i = cells - 1; i > 0; i--) {
@@ -107,10 +104,19 @@ function resetBoard() {
     }
   }
 
-  //clear board
+  return currentSize;
+}
+
+function clearBoard() {
   board = {};
   document.querySelector(".board").innerHTML = "";
-  
+}
+
+function resetBoard() {
+  currentSize = getBoardSize();
+
+  clearBoard();
+
   //re-initialize board
   board = createBoard(currentSize);
 
@@ -118,42 +124,28 @@ function resetBoard() {
 }
 
 function smallerBoard() {
-  var cells = board.cells.length;
-  var currentSize;
-  for (let i = cells - 1; i > 0; i--) {
-    if (i * i === cells) {
-      currentSize = i;
-      break;
-    }
-  }
-  
+  currentSize = getBoardSize();
+
   if (currentSize < 4)
     currentSize = 4;
 
-  board = {};
-  document.querySelector(".board").innerHTML = "";
-  
+  clearBoard();
+
+  //re-initialize board
   board = createBoard(currentSize - 1);
 
   startGame();
 }
 
 function biggerBoard() {
-  var cells = board.cells.length;
-  var currentSize;
-  for (let i = cells - 1; i > 0; i--) {
-    if (i * i === cells) {
-      currentSize = i;
-      break;
-    }
-  }
-  
+  currentSize = getBoardSize();
+
   if (currentSize > 4)
     currentSize = 4;
 
-  board = {};
-  document.querySelector(".board").innerHTML = "";
-  
+  clearBoard();
+
+  //re-initialize board
   board = createBoard(currentSize + 1);
 
   startGame();
