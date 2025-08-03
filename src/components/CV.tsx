@@ -19,11 +19,13 @@ import { Button } from "@/components/ui/button";
 
 const CV = () => {
   return (
-    <div className="max-w-6xl mx-auto p-6 space-y-8 bg-background">
+    <div className="max-w-6xl mx-auto p-6 space-y-8">
       {/* Header Section */}
       <Card className="text-center">
         <CardHeader className="pb-4">
-          <CardTitle className="text-4xl font-bold">Aidan Starke</CardTitle>
+          <CardTitle className="text-4xl font-bold">
+            Aidan Starke
+          </CardTitle>
           <CardDescription className="text-xl">
             Senior Full-Stack Developer | Rust and Blockchain Technology
           </CardDescription>
@@ -76,9 +78,11 @@ const CV = () => {
       </Card>
 
       {/* Professional Summary */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Professional Summary</CardTitle>
+      <Card className="bg-white border-slate-300">
+        <CardHeader className="bg-gradient-to-r from-slate-100 to-slate-200">
+          <CardTitle className="text-2xl text-slate-800">
+            Professional Summary
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground leading-relaxed">
@@ -92,19 +96,21 @@ const CV = () => {
       </Card>
 
       {/* Technical Skills */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Technical Skills</CardTitle>
+      <Card className="bg-white border-emerald-300">
+        <CardHeader className="bg-gradient-to-r from-emerald-100 to-green-100">
+          <CardTitle className="text-2xl text-emerald-800">
+            Technical Skills
+          </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="mt-6">
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold">
+            <div className="space-y-4 p-4 rounded-lg bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800">
+              <h3 className="text-lg font-semibold text-blue-700 dark:text-blue-300">
                 Primary Languages & Frameworks
               </h3>
               <div className="space-y-3">
                 <div>
-                  <Badge variant="secondary" className="mb-1">
+                  <Badge className="mb-1 bg-blue-600 hover:bg-blue-700 text-white">
                     TypeScript/JavaScript
                   </Badge>
                   <p className="text-sm text-muted-foreground">
@@ -112,7 +118,7 @@ const CV = () => {
                   </p>
                 </div>
                 <div>
-                  <Badge variant="secondary" className="mb-1">
+                  <Badge className="mb-1 bg-cyan-600 hover:bg-cyan-700 text-white">
                     React
                   </Badge>
                   <p className="text-sm text-muted-foreground">
@@ -120,7 +126,7 @@ const CV = () => {
                   </p>
                 </div>
                 <div>
-                  <Badge variant="secondary" className="mb-1">
+                  <Badge className="mb-1 bg-green-600 hover:bg-green-700 text-white">
                     Substrate
                   </Badge>
                   <p className="text-sm text-muted-foreground">
@@ -128,7 +134,7 @@ const CV = () => {
                   </p>
                 </div>
                 <div>
-                  <Badge variant="secondary" className="mb-1">
+                  <Badge className="mb-1 bg-orange-600 hover:bg-orange-700 text-white">
                     Rust
                   </Badge>
                   <p className="text-sm text-muted-foreground">
@@ -139,53 +145,77 @@ const CV = () => {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold">Blockchain & Web3</h3>
+            <div className="space-y-4 p-4 rounded-lg bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-800">
+              <h3 className="text-lg font-semibold text-purple-700 dark:text-purple-300">
+                Blockchain & Web3
+              </h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   Web3 Application Architecture
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   Wallet Integration and Transaction Management
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   Blockchain API Development and Integration
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   Real-time Blockchain Data Processing
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   Substrate Framework Understanding
                 </li>
               </ul>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold">Additional Technologies</h3>
+            <div className="space-y-4 p-4 rounded-lg bg-orange-50 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-800">
+              <h3 className="text-lg font-semibold text-orange-700 dark:text-orange-300">
+                Additional Technologies
+              </h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   Node.js
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   RESTful APIs and GraphQL
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   PostgreSQL, MongoDB
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   Docker, CI/CD Pipelines, Git
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-mono mt-1 flex-shrink-0">&gt;</span>
+                  <span className="text-primary font-mono mt-1 flex-shrink-0">
+                    &gt;
+                  </span>
                   AWS and Cloud Services
                 </li>
               </ul>
@@ -195,9 +225,11 @@ const CV = () => {
       </Card>
 
       {/* Professional Experience */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Professional Experience</CardTitle>
+      <Card className="bg-white border-indigo-300">
+        <CardHeader className="bg-gradient-to-r from-indigo-100 to-blue-100">
+          <CardTitle className="text-2xl text-indigo-800">
+            Professional Experience
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
@@ -253,9 +285,9 @@ const CV = () => {
       </Card>
 
       {/* Key Projects */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Key Projects</CardTitle>
+      <Card className="bg-white border-rose-300">
+        <CardHeader className="bg-gradient-to-r from-rose-100 to-pink-100">
+          <CardTitle className="text-2xl text-rose-800">Key Projects</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           {/* Project 1 */}
@@ -410,9 +442,11 @@ const CV = () => {
       </Card>
 
       {/* Education */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Education & Learning</CardTitle>
+      <Card className="bg-white border-teal-300">
+        <CardHeader className="bg-gradient-to-r from-teal-100 to-cyan-100">
+          <CardTitle className="text-2xl text-teal-800">
+            Education & Learning
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-2">
@@ -427,9 +461,9 @@ const CV = () => {
       </Card>
 
       {/* References */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">References</CardTitle>
+      <Card className="bg-white border-violet-300">
+        <CardHeader className="bg-gradient-to-r from-violet-100 to-purple-100">
+          <CardTitle className="text-2xl text-violet-800">References</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-2 gap-6">
