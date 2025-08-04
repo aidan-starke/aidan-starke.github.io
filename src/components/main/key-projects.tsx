@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import { BulletList } from "./bullet-list";
+import { BulletList } from "../bullet-list";
 import { SectionHeading } from "./section-heading";
 
 export function KeyProjects() {
@@ -15,7 +15,7 @@ export function KeyProjects() {
           technologies="TypeScript, React, Next.js, SubSquid, PostgreSQL, Tailwind CSS"
           description={[
             "Lead developer for cross-blockchain token migration bridge enabling 1:1 CENNZ to ROOT token conversion",
-            "Successfully processed 20,000+ transactions with zero data loss"
+            "Successfully processed 20,000+ transactions with zero data loss",
           ]}
         />
         <Project
@@ -25,7 +25,7 @@ export function KeyProjects() {
           technologies="Rust, SQLite, Tokio, Serde, Axum, Claude API"
           description={[
             "Built comprehensive CLI tool in Rust for seamless Claude API integration",
-            "Applied key Rust concepts: ownership, async/await, error handling with Result types"
+            "Applied key Rust concepts: ownership, async/await, error handling with Result types",
           ]}
         />
       </div>
@@ -42,18 +42,18 @@ function Project(props: {
 }) {
   return (
     <div>
-      <div className="flex justify-between items-center mb-2">
+      <div className="mb-2 flex items-center justify-between">
         <a
           href={props.href}
-          className="text-slate-800 font-bold hover:text-slate-600 flex items-center gap-1"
+          className="flex items-center gap-1 font-bold text-slate-800 hover:text-slate-600"
           target="_blank"
           rel="noopener noreferrer"
         >
           {props.title} <ExternalLink size={14} />
         </a>
-        <span className="text-slate-500 text-xs">{props.timeline}</span>
+        <span className="text-xs text-slate-500">{props.timeline}</span>
       </div>
-      <p className="text-slate-600 text-sm mb-2">{props.technologies}</p>
+      <p className="mb-2 text-sm text-slate-600">{props.technologies}</p>
       <BulletList items={props.description} size="sm" />
     </div>
   );
