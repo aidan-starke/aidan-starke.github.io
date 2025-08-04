@@ -1,8 +1,4 @@
-import type { PropsWithChildren } from "react";
-
-interface SectionHeadingProps extends PropsWithChildren {}
-
-export function SectionHeading({ children }: SectionHeadingProps) {
+export function SectionHeading({ children }: React.PropsWithChildren) {
   return (
     <h3 className="relative -mr-8 mb-4 border-b border-white pb-2 text-lg font-bold">
       {children}

@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { BulletList } from "../bullet-list";
 import { SectionHeading } from "./section-heading";
+import { Link } from "../link";
 
 export function KeyProjects() {
   return (
@@ -43,14 +44,12 @@ function Project(props: {
   return (
     <div>
       <div className="mb-2 flex items-center justify-between">
-        <a
+        <Link
           href={props.href}
-          className="flex items-center gap-1 font-bold text-slate-800 hover:text-slate-600"
-          target="_blank"
-          rel="noopener noreferrer"
+          className="flex items-center gap-1 font-bold text-slate-800 hover:underline hover:decoration-blue-200"
         >
           {props.title} <ExternalLink size={14} />
-        </a>
+        </Link>
         <span className="text-xs text-slate-500">{props.timeline}</span>
       </div>
       <p className="mb-2 text-sm text-slate-600">{props.technologies}</p>

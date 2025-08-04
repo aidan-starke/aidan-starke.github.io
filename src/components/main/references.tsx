@@ -1,3 +1,4 @@
+import { Link } from "../link";
 import { SectionHeading } from "./section-heading";
 import { Mail, Phone } from "lucide-react";
 
@@ -41,21 +42,18 @@ function Reference(props: {
       <div className="mt-2 space-y-1 text-sm text-slate-700">
         <div className="flex items-center gap-2">
           <Phone size={14} className="text-slate-600" />
-          <a
+          <Link
             href={`tel:${props.phone.replace(/\s/g, "")}`}
-            className="break-all text-slate-700 transition-transform hover:scale-105 hover:underline hover:decoration-blue-200"
+            className="text-slate-700"
           >
             {props.phone}
-          </a>
+          </Link>
         </div>
         <div className="flex items-center gap-2">
           <Mail size={14} className="text-slate-600" />
-          <a
-            href={`mailto:${props.email}`}
-            className="break-all text-slate-700 transition-transform hover:scale-105 hover:underline hover:decoration-blue-200"
-          >
+          <Link href={`mailto:${props.email}`} className="text-slate-700">
             {props.email}
-          </a>
+          </Link>
         </div>
       </div>
     </div>

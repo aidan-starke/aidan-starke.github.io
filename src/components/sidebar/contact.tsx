@@ -1,5 +1,6 @@
 import { Mail, Phone, Linkedin, Github, MapPin } from "lucide-react";
 import { SectionHeading } from "./section-heading";
+import { Link } from "../link";
 
 export function Contact() {
   return (
@@ -44,14 +45,9 @@ function ContactItem(props: {
     <div className="flex items-center gap-3">
       {props.icon}
       {props.href ? (
-        <a
-          href={props.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="break-all text-white transition-transform hover:scale-105 hover:underline hover:decoration-blue-200"
-        >
+        <Link className="break-all text-white" href={props.href}>
           {props.text}
-        </a>
+        </Link>
       ) : (
         <span className="break-all">{props.text}</span>
       )}
