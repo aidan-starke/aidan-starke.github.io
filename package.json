@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "predeploy": "pnpm build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -42,6 +42,5 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.4"
-  },
-  "packageManager": "pnpm@8.15.4+sha512.0bd3a9be9eb0e9a692676deec00a303ba218ba279d99241475616b398dbaeedd11146f92c2843458f557b1d127e09d4c171e105bdcd6b61002b39685a8016b9e"
+  }
 }
