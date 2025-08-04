@@ -17,4 +17,3 @@ export function Link({ className, children, ...props }: LinkProps) {
     </a>
   );
 }
-
