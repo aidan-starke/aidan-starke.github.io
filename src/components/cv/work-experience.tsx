@@ -1,11 +1,10 @@
 import { BulletList } from "./bullet-list";
+import { SectionHeading } from "./section-heading";
 
 export function WorkExperience() {
   return (
-    <div>
-      <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2 -ml-8 pl-8">
-        WORK EXPERIENCE
-      </h2>
+    <div className="group">
+      <SectionHeading>WORK EXPERIENCE</SectionHeading>
 
       <div className="mb-6">
         <div className="flex justify-between items-center mb-2">

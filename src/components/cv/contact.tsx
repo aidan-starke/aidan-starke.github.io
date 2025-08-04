@@ -2,9 +2,10 @@ import { Mail, Phone, Linkedin, Github, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
-    <div>
-      <h3 className="text-lg font-bold mb-4 border-b border-white pb-2 -mr-8">
+    <div className="group">
+      <h3 className="text-lg font-bold mb-4 border-b border-white pb-2 -mr-8 relative">
         CONTACT
+        <div className="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-blue-500 group-hover:w-full transition-all duration-500 origin-right"></div>
       </h3>
       <div className="space-y-3 text-sm">
         <ContactItem
@@ -49,7 +50,7 @@ function ContactItem(props: {
           href={props.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="!text-white hover:!underline hover:!decoration-blue-200 hover:scale-105 transition-transform break-all"
+          className="text-white hover:underline hover:decoration-blue-200 hover:scale-105 transition-transform break-all"
         >
           {props.text}
         </a>

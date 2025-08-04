@@ -1,12 +1,11 @@
 import { ExternalLink } from "lucide-react";
 import { BulletList } from "./bullet-list";
+import { SectionHeading } from "./section-heading";
 
 export function KeyProjects() {
   return (
-    <div>
-      <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2 -ml-8 pl-8">
-        KEY PROJECTS
-      </h2>
+    <div className="group">
+      <SectionHeading>KEY PROJECTS</SectionHeading>
 
       <div className="space-y-6">
         <Project
