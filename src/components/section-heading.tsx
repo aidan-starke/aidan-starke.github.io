@@ -1,6 +1,6 @@
-interface SectionHeadingProps {
-  children: React.ReactNode;
-}
+import type { PropsWithChildren } from "react";
+
+interface SectionHeadingProps extends PropsWithChildren {}
 
 export function SectionHeading({ children }: SectionHeadingProps) {
   return (
@@ -11,4 +11,3 @@ export function SectionHeading({ children }: SectionHeadingProps) {
     </h2>
   );
 }
-
