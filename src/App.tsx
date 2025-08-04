@@ -1,4 +1,4 @@
-import CV from "./components/CV";
+import { CV } from "./components/cv";
 
 function App() {
   return (
