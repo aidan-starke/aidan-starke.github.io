@@ -43,7 +43,7 @@ function Project(props: {
 }) {
   return (
     <div>
-      <div className="mb-2 flex items-center justify-between">
+      <div className="mb-2 flex flex-wrap items-center justify-between">
         <Link
           href={props.href}
           className="flex items-center gap-1 font-bold text-slate-800 hover:underline hover:decoration-blue-200"

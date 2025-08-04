@@ -7,7 +7,7 @@ export function WorkExperience() {
       <SectionHeading>WORK EXPERIENCE</SectionHeading>
 
       <div className="mb-6">
-        <div className="mb-2 flex items-center justify-between">
+        <div className="mb-2 flex flex-wrap items-center justify-between">
           <div>
             <h3 className="text-xl font-bold text-slate-800">
               Senior Full-Stack Developer
