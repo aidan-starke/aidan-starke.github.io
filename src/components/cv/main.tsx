@@ -2,10 +2,10 @@ import { ExternalLink } from "lucide-react";
 
 export function Main() {
   return (
-    <div className="w-2/3 p-8">
+    <div className="w-2/3 p-8 space-y-8">
       {/* About Me Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2">
+      <div>
+        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2 -ml-8 pl-8">
           ABOUT ME
         </h2>
         <p className="text-slate-700 leading-relaxed">
@@ -17,13 +17,13 @@ export function Main() {
       </div>
 
       {/* Work Experience Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2">
+      <div>
+        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2 -ml-8 pl-8">
           WORK EXPERIENCE
         </h2>
 
         <div className="mb-6">
-          <div className="flex justify-between items-start mb-2">
+          <div className="flex justify-between items-center mb-2">
             <div>
               <h3 className="text-xl font-bold text-slate-800">
                 Senior Full-Stack Developer
@@ -37,8 +37,8 @@ export function Main() {
             <li className="flex items-start gap-2">
               <span className="text-slate-800 font-bold">•</span>
               Developed and maintained RESTful APIs for blockchain data access,
-              enabling seamless integration between web applications and
-              Substrate-based networks
+              enabling seamless integration between web applications, and
+              Substrate and EVM based networks
             </li>
             <li className="flex items-start gap-2">
               <span className="text-slate-800 font-bold">•</span>
@@ -48,7 +48,8 @@ export function Main() {
             <li className="flex items-start gap-2">
               <span className="text-slate-800 font-bold">•</span>
               Architected high-performance blockchain indexers in TypeScript to
-              process and structure on-chain data for application consumption
+              process and structure on-chain data, made available via GraphQL
+              APIs for application consumption
             </li>
             <li className="flex items-start gap-2">
               <span className="text-slate-800 font-bold">•</span>
@@ -58,15 +59,17 @@ export function Main() {
             </li>
           </ul>
         </div>
+      </div>
 
-        {/* Key Projects */}
-        <div className="mb-6">
-          <h3 className="text-lg font-bold text-slate-800 mb-3">
-            Key Projects
-          </h3>
+      {/* Key Projects Section */}
+      <div>
+        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2 -ml-8 pl-8">
+          KEY PROJECTS
+        </h2>
 
-          <div className="mb-4">
-            <div className="flex justify-between items-start mb-2">
+        <div className="space-y-6">
+          <div>
+            <div className="flex justify-between items-center mb-2">
               <a
                 href="https://github.com/futureversecom/trn-cennz-burn"
                 className="text-slate-800 font-bold hover:text-slate-600 flex items-center gap-1"
@@ -75,7 +78,9 @@ export function Main() {
               >
                 CENNZ Burn Project <ExternalLink size={14} />
               </a>
-              <span className="text-slate-500 text-xs">Jan - Mar 2024</span>
+              <span className="text-slate-500 text-xs">
+                Futureverse | Jan - Mar 2024
+              </span>
             </div>
             <p className="text-slate-600 text-sm mb-2">
               TypeScript, React, Next.js, SubSquid, PostgreSQL, Tailwind CSS
@@ -93,20 +98,21 @@ export function Main() {
             </ul>
           </div>
 
-          <div className="mb-4">
-            <div className="flex justify-between items-start mb-2">
+          <div>
+            <div className="flex justify-between items-center mb-2">
               <a
                 href="https://github.com/aidan-starke/clai"
                 className="text-slate-800 font-bold hover:text-slate-600 flex items-center gap-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                CLAI - Command Line AI Interface <ExternalLink size={14} />
+                CLAI - Command Line Artificial Interface{" "}
+                <ExternalLink size={14} />
               </a>
               <span className="text-slate-500 text-xs">Personal Project</span>
             </div>
             <p className="text-slate-600 text-sm mb-2">
-              Rust, SQLite, Claude API
+              Rust, SQLite, Tokio, Serde, Axum, Claude API
             </p>
             <ul className="space-y-1 text-slate-700 text-sm">
               <li className="flex items-start gap-2">
@@ -125,8 +131,8 @@ export function Main() {
       </div>
 
       {/* References Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2">
+      <div>
+        <h2 className="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-slate-800 pb-2 -ml-8 pl-8">
           REFERENCES
         </h2>
 
@@ -159,4 +165,3 @@ export function Main() {
     </div>
   );
 }
-

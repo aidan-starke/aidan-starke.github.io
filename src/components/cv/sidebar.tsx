@@ -2,19 +2,19 @@ import { Mail, Phone, Linkedin, Github, MapPin } from "lucide-react";
 
 export function Sidebar() {
   return (
-    <div className="w-1/3 bg-slate-800 text-white p-8">
+    <div className="w-1/3 bg-slate-800 text-white p-8 space-y-8">
       {/* Header */}
-      <div className="mb-8">
-        <h2 className="text-4xl font-bold text-white mb-2">Aidan Starke</h2>
-        <p className="font-semibold text-xl text-blue-200">
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-2">Aidan Starke</h2>
+        <p className="font-semibold text-lg text-blue-200">
           Senior Full-Stack Developer
         </p>
-        <p className="text-lg text-blue-100">Rust and Blockchain Technology</p>
+        <p className="text-blue-100">Rust and Blockchain Technology</p>
       </div>
 
       {/* Contact Section */}
-      <div className="mb-8">
-        <h3 className="text-lg font-bold mb-4 border-b border-blue-400 pb-2">
+      <div>
+        <h3 className="text-lg font-bold mb-4 border-b border-white pb-2 -mr-8">
           CONTACT
         </h3>
         <div className="space-y-3 text-sm">
@@ -42,8 +42,8 @@ export function Sidebar() {
       </div>
 
       {/* Education Section */}
-      <div className="mb-8">
-        <h3 className="text-lg font-bold mb-4 border-b border-blue-400 pb-2">
+      <div>
+        <h3 className="text-lg font-bold mb-4 border-b border-white pb-2 -mr-8">
           EDUCATION
         </h3>
         <div className="text-sm">
@@ -54,32 +54,40 @@ export function Sidebar() {
       </div>
 
       {/* Skills Section */}
-      <div className="mb-8">
-        <h3 className="text-lg font-bold mb-4 border-b border-blue-400 pb-2">
+      <div>
+        <h3 className="text-lg font-bold mb-4 border-b border-white pb-2 -mr-8">
           SKILLS
         </h3>
         <div className="space-y-4 text-sm">
           <div>
-            <h4 className="font-semibold text-blue-200 mb-2">Languages</h4>
+            <h4 className="font-semibold text-blue-200 mb-2">
+              Languages / Frameworks
+            </h4>
             <ul className="space-y-1">
-              <li>TypeScript/JavaScript</li>
+              <li>TypeScript</li>
               <li>Rust</li>
+              <li>Solidity</li>
               <li>React</li>
+              <li>Next.js</li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold text-blue-200 mb-2">Blockchain</h4>
             <ul className="space-y-1">
               <li>Substrate</li>
-              <li>Web3 APIs</li>
+              <li>MetaMask</li>
+              <li>WalletConnect</li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold text-blue-200 mb-2">Tools</h4>
             <ul className="space-y-1">
+              <li>GitHub</li>
               <li>Docker</li>
               <li>AWS</li>
+              <li>Redis</li>
               <li>PostgreSQL</li>
+              <li>MongoDB</li>
             </ul>
           </div>
         </div>
