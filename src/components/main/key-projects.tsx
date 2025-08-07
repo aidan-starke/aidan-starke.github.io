@@ -10,8 +10,8 @@ export function KeyProjects() {
 
       <div className="space-y-6">
         <Project
-          title="CENNZ Burn Project"
-          href="https://github.com/futureversecom/trn-cennz-burn"
+          title="CENNZ To ROOT Swap"
+          href="https://root-swap.cennz.net/"
           timeline="Futureverse | Jan - Mar 2024"
           technologies="TypeScript, React, Next.js, SubSquid, PostgreSQL, Tailwind CSS"
           description={[
