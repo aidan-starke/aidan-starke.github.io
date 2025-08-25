@@ -5,7 +5,6 @@ export function Header() {
       <p className="text-lg font-semibold text-blue-200">
         Senior Full-Stack Developer
       </p>
-      <p className="text-blue-100">Rust and Blockchain Technology</p>
     </div>
   );
 }

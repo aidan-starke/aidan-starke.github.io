@@ -16,7 +16,8 @@ export function KeyProjects() {
           technologies="TypeScript, React, Next.js, SubSquid, PostgreSQL, Tailwind CSS"
           description={[
             "Lead developer for cross-blockchain token migration bridge enabling 1:1 CENNZ to ROOT token conversion",
-            "Successfully processed 20,000+ transactions with zero data loss",
+            "Built and maintained frontend, API, and indexer",
+            "Successfully processed 20,000+ transactions and counting with zero data loss",
           ]}
         />
         <Project
