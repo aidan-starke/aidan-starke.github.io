@@ -16,11 +16,10 @@ export function References() {
           email="jason@tulp.dev"
         />
         <Reference
-          name="Warrick Wills"
-          title="Lead Engineer - Integration"
-          company="Xero"
-          phone="+64 21 116 8901"
-          email="warrick.j@live.com"
+          name="Philip Roigard"
+          title="Team Lead"
+          company="Futureverse"
+          phone="+64 21 568 108"
         />
       </div>
     </div>
@@ -32,7 +31,7 @@ function Reference(props: {
   title: string;
   company: string;
   phone: string;
-  email: string;
+  email?: string;
 }) {
   return (
     <div>
@@ -49,12 +48,14 @@ function Reference(props: {
             {props.phone}
           </Link>
         </div>
-        <div className="flex items-center gap-2">
-          <Mail size={14} className="text-slate-600" />
-          <Link href={`mailto:${props.email}`} className="text-slate-700">
-            {props.email}
-          </Link>
-        </div>
+        {props.email && (
+          <div className="flex items-center gap-2">
+            <Mail size={14} className="text-slate-600" />
+            <Link href={`mailto:${props.email}`} className="text-slate-700">
+              {props.email}
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
