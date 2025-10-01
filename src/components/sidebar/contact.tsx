@@ -19,12 +19,12 @@ export function Contact() {
         />
         <ContactItem
           icon={<Linkedin size={16} className="flex-shrink-0 text-blue-400" />}
-          text="linkedin.com/in/aidan-starke"
+          text="aidan-starke"
           href="https://linkedin.com/in/aidan-starke"
         />
         <ContactItem
           icon={<Github size={16} className="flex-shrink-0 text-blue-400" />}
-          text="github.com/aidan-starke"
+          text="aidan-starke"
           href="https://github.com/aidan-starke"
         />
         <ContactItem
