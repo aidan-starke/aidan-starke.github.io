@@ -7,7 +7,15 @@ export function Skills() {
       <div className="space-y-4 text-sm">
         <List
           header="Languages / Frameworks"
-          items={["TypeScript", "Rust", "Solidity", "React", "Next.js"]}
+          items={[
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Rust",
+            "Solidity",
+            "C#",
+            ".NET",
+          ]}
         />
         <List
           header="Blockchain"
