@@ -16,6 +16,12 @@ export function References() {
           email="jason@tulp.dev"
         />
         <Reference
+          name="James Carolan"
+          title="Head of Experience Platform"
+          company="Futureverse"
+          email="james.carolan87@gmail.com"
+        />
+        <Reference
           name="Philip Roigard"
           title="Team Lead"
           company="Futureverse"
@@ -30,7 +36,7 @@ function Reference(props: {
   name: string;
   title: string;
   company: string;
-  phone: string;
+  phone?: string;
   email?: string;
 }) {
   return (
@@ -39,15 +45,17 @@ function Reference(props: {
       <p className="text-sm text-slate-600">{props.title}</p>
       <p className="text-sm text-slate-600">{props.company}</p>
       <div className="mt-2 space-y-1 text-sm text-slate-700">
-        <div className="flex items-center gap-2">
-          <Phone size={14} className="text-slate-600" />
-          <Link
-            href={`tel:${props.phone.replace(/\s/g, "")}`}
-            className="text-slate-700"
-          >
-            {props.phone}
-          </Link>
-        </div>
+        {props.phone && (
+          <div className="flex items-center gap-2">
+            <Phone size={14} className="text-slate-600" />
+            <Link
+              href={`tel:${props.phone.replace(/\s/g, "")}`}
+              className="text-slate-700"
+            >
+              {props.phone}
+            </Link>
+          </div>
+        )}
         {props.email && (
           <div className="flex items-center gap-2">
             <Mail size={14} className="text-slate-600" />
