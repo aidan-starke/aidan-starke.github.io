@@ -14,8 +14,8 @@ export function Contact() {
         />
         <ContactItem
           icon={<Mail size={16} className="flex-shrink-0 text-blue-400" />}
-          text="starke.aidan@gmail.com"
-          href="mailto:starke.aidan@gmail.com"
+          text="aidan@starkedev.net"
+          href="mailto:aidan@starkedev.net"
         />
         <ContactItem
           icon={<Linkedin size={16} className="flex-shrink-0 text-blue-400" />}
