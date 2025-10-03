@@ -22,6 +22,14 @@ export function References() {
           email="james.carolan87@gmail.com"
         />
         <Reference
+          name="Tracy Jordan"
+          title="Technical Project Manager"
+          company="Futureverse"
+          phone="+64 21 722 743"
+          email="tracydeanjordan@gmail.com"
+          testimonial="I had the pleasure of having Aidan on various projects I managed while at Futureverse. Aidan worked on many applications (included a token exchange, bridge, liquidity pool mechanism, and a rewards system) that leveraged on chain data. He used React.js, TypeScript, and PostgreSQL/Prisma to build indexers, databases, and front ends. Aidan would be an asset to any team because he is a jack of all trades, is willing to pick up and learn anything, and generously jumps in and helps get any work across the finish line. Plus, he's enjoyable to work with."
+        />
+        <Reference
           name="Philip Roigard"
           title="Team Lead"
           company="Futureverse"
@@ -38,6 +46,7 @@ function Reference(props: {
   company: string;
   phone?: string;
   email?: string;
+  testimonial?: string;
 }) {
   return (
     <div>
@@ -65,6 +74,11 @@ function Reference(props: {
           </div>
         )}
       </div>
+      {props.testimonial && (
+        <p className="mt-3 border-l-2 border-slate-300 pl-3 text-sm text-slate-600 italic">
+          "{props.testimonial}"
+        </p>
+      )}
     </div>
   );
 }
