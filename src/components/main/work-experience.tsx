@@ -14,7 +14,7 @@ export function WorkExperience() {
             </h3>
             <p className="font-medium text-slate-600">Futureverse</p>
           </div>
-          <span className="text-sm text-slate-500">Nov 2021 - Present</span>
+          <span className="text-sm text-slate-500">Nov 2021 - Sep 2025</span>
         </div>
 
         <BulletList
