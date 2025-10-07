@@ -30,6 +30,17 @@ export function KeyProjects() {
             "Applied key Rust concepts: ownership, async/await, error handling with Result types",
           ]}
         />
+        <Project
+          title="TaskManager"
+          href="https://github.com/aidan-starke/TaskManager"
+          timeline="Personal Project"
+          technologies="C#, .NET 9, Clean Architecture, CQRS, MediatR, Spectre.Console, xUnit"
+          description={[
+            "Comprehensive CLI task management application built to explore modern software architecture patterns",
+            "Implements Clean Architecture with CQRS pattern, Repository, Strategy, and Result patterns",
+            "Features 121 passing tests demonstrating TDD approach with comprehensive test coverage",
+          ]}
+        />
       </div>
     </div>
   );
