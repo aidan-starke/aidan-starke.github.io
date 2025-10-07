@@ -24,10 +24,11 @@ export function KeyProjects() {
           title="CLAI - Command Line Artificial Interface"
           href="https://github.com/aidan-starke/clai"
           timeline="Personal Project"
-          technologies="Rust, SQLite, Tokio, Serde, Axum, Claude API"
+          technologies="Rust, SQLite, Tokio, SeaORM, Axum, Serde, Claude API"
           description={[
-            "Built comprehensive CLI tool in Rust for seamless Claude API integration",
-            "Applied key Rust concepts: ownership, async/await, error handling with Result types",
+            "Production-quality CLI application for conversational AI interaction with client-server architecture",
+            "Built across 6 crates (~3,400 lines) featuring persistent sessions, role-playing, and RESTful API",
+            "Demonstrates advanced Rust patterns: async/await with Tokio, comprehensive error handling, database ORMs",
           ]}
         />
         <Project
